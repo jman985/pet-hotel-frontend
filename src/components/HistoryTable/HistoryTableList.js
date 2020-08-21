@@ -13,8 +13,8 @@ class HistoryTableList extends Component {
       <tbody>
         {this.props.display.map(item =>
             <tr key={item.id}>
-              <td>{item.owners_name}</td>
-              <td>{item.pets_name}</td>
+              <td>{item.id}</td>
+              <td>{item.name}</td>
               <td>{item.breed}</td>
               <td>{item.color}</td>
               <td>{(item.checked_in === 'true') ? 'Yes' : 'No' }</td>
